@@ -347,6 +347,7 @@
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Models\testClass.cs" />
+    <Compile Include="Models\Testtt.cs" />
     <Compile Include="Projects.aspx.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
