@@ -38,10 +38,6 @@ namespace Project2.Admin
                     Request.Url.AbsoluteUri.Count() - Request.Url.Query.Count());
                 Response.Redirect(pageUrl + "?CourseAction=add");
             }
-            else
-            {
-                LabelAddStatus.Text = "Unable to add new product to database.";
-            }
         }
 
         public IQueryable GetCourses()

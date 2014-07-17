@@ -13,15 +13,6 @@ namespace Project2.Admin {
     public partial class AdminPage {
         
         /// <summary>
-        /// LabelAddName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddName;
-        
-        /// <summary>
         /// AddCourseName control.
         /// </summary>
         /// <remarks>
@@ -29,24 +20,6 @@ namespace Project2.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox AddCourseName;
-        
-        /// <summary>
-        /// RequiredFieldValidator1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-        
-        /// <summary>
-        /// LabelAddTeacher control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddTeacher;
         
         /// <summary>
         /// AddCourseTeacherFN control.
@@ -58,24 +31,6 @@ namespace Project2.Admin {
         protected global::System.Web.UI.WebControls.TextBox AddCourseTeacherFN;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
         /// AddCourseTeacherLN control.
         /// </summary>
         /// <remarks>
@@ -83,24 +38,6 @@ namespace Project2.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox AddCourseTeacherLN;
-        
-        /// <summary>
-        /// RequiredFieldValidator4 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
-        
-        /// <summary>
-        /// LabelAddYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddYear;
         
         /// <summary>
         /// SelectCourseYear control.
@@ -112,13 +49,13 @@ namespace Project2.Admin {
         protected global::System.Web.UI.WebControls.DropDownList SelectCourseYear;
         
         /// <summary>
-        /// LabelAddDepartement control.
+        /// AddCourseDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddDepartement;
+        protected global::System.Web.UI.WebControls.TextBox AddCourseDescription;
         
         /// <summary>
         /// SelectCourseDepartement control.
@@ -130,33 +67,6 @@ namespace Project2.Admin {
         protected global::System.Web.UI.WebControls.DropDownList SelectCourseDepartement;
         
         /// <summary>
-        /// LabelAddDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddDescription;
-        
-        /// <summary>
-        /// AddCourseDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AddCourseDescription;
-        
-        /// <summary>
-        /// RequiredFieldValidator3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
-        
-        /// <summary>
         /// AddCourseButton control.
         /// </summary>
         /// <remarks>
@@ -164,15 +74,6 @@ namespace Project2.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button AddCourseButton;
-        
-        /// <summary>
-        /// LabelAddStatus control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddStatus;
         
         /// <summary>
         /// LabelRemoveCourse control.

@@ -132,7 +132,7 @@
                                 
                                 <asp:Label Text="<%#: Item.Teachers.First().FirstName +' '+Item.Teachers.First().LastName %> " runat="server"></asp:Label>
                             </h4>
-                            <p class="list-group-item-text"><%#: Item.CourseDescription %></p>
+                            <%--<p class="list-group-item-text"><%#: Item.CourseDescription %></p>--%>
                         </a>
                         
                     </div>
