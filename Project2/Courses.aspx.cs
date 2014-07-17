@@ -31,7 +31,7 @@ namespace Project2
             if (academicYear == 1)
             {
                 var query = from c in cc.Courses
-                            where c.CourseYear == 1
+                            where c.CourseYear.Equals(1) 
                     select c;
 
                 return query;

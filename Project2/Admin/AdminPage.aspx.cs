@@ -28,7 +28,7 @@ namespace Project2.Admin
         protected void AddCourseButton_Click(object sender, EventArgs e)
         {
             // Add Course data to DB.
-            AddCourses Courses = new AddCourses();
+            CourseBuilder Courses = new CourseBuilder();
             bool addSuccess = Courses.AddCourse(AddCourseName.Text, AddCourseDescription.Text,
                 AddCourseTeacherFN.Text, AddCourseTeacherLN.Text, SelectCourseYear.SelectedItem.Text, SelectCourseDepartement.SelectedItem.Text);
             if (addSuccess)

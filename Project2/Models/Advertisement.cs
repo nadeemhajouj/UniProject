@@ -27,7 +27,7 @@ namespace Project2.Models
         public string ImagePath { get; set; }
 
         public int? CourseID { get; set; }
-
+         
         public string Author { get; set; }
 
     }

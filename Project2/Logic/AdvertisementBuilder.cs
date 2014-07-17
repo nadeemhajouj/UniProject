@@ -32,6 +32,7 @@ namespace Project2.Logic
                                select c).First();
                 
                 course.Advertisements.Add(advertisement);
+                
                 // Add Courses to DB.
                 _db.Advertisements.Add(advertisement);
                 _db.SaveChanges();
