@@ -7,5 +7,6 @@ namespace Project2.Models
 {
     public class testClass
     {
+        private int hiiii;
     }
 }
