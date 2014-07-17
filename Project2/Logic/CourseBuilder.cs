@@ -6,7 +6,7 @@ using Project2.Models;
 
 namespace Project2.Logic
 {
-    public class AddCourses
+    public class CourseBuilder
     {
         public bool AddCourse(string CourseName, string CourseDesc, string CourseTeacherFN,string CourseTeacherLN, string CourseYear, string CourseDep)
         {

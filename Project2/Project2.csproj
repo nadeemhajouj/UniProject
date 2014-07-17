@@ -321,8 +321,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Logic\AddCourses.cs" />
+    <Compile Include="Logic\CommentBuilder.cs" />
+    <Compile Include="Logic\CourseBuilder.cs" />
     <Compile Include="Logic\AdvertisementBuilder.cs" />
+    <Compile Include="Logic\PostBuilder.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Migrations\201407151004189_e.cs" />
     <Compile Include="Migrations\201407151004189_e.Designer.cs">
@@ -335,6 +337,10 @@
     <Compile Include="Migrations\201407170158354_AddCourseContext.cs" />
     <Compile Include="Migrations\201407170158354_AddCourseContext.Designer.cs">
       <DependentUpon>201407170158354_AddCourseContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407170717377_a.cs" />
+    <Compile Include="Migrations\201407170717377_a.Designer.cs">
+      <DependentUpon>201407170717377_a.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
@@ -398,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201407170158354_AddCourseContext.resx">
       <DependentUpon>201407170158354_AddCourseContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407170717377_a.resx">
+      <DependentUpon>201407170717377_a.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
