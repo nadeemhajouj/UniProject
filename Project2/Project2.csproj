@@ -152,6 +152,7 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="AddAdver.aspx" />
+    <Content Include="AddHomework.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="Advertisements.aspx" />
     <Content Include="Contact.aspx" />
@@ -209,6 +210,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="ShowHomework.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -265,6 +267,13 @@
     </Compile>
     <Compile Include="AddAdver.aspx.designer.cs">
       <DependentUpon>AddAdver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddHomework.aspx.cs">
+      <DependentUpon>AddHomework.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddHomework.aspx.designer.cs">
+      <DependentUpon>AddHomework.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
@@ -324,6 +333,7 @@
     <Compile Include="Logic\CommentBuilder.cs" />
     <Compile Include="Logic\CourseBuilder.cs" />
     <Compile Include="Logic\AdvertisementBuilder.cs" />
+    <Compile Include="Logic\HomeworkBuilder.cs" />
     <Compile Include="Logic\PostBuilder.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Migrations\201407151004189_e.cs" />
@@ -341,6 +351,18 @@
     <Compile Include="Migrations\201407170717377_a.cs" />
     <Compile Include="Migrations\201407170717377_a.Designer.cs">
       <DependentUpon>201407170717377_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407170937233_t1.cs" />
+    <Compile Include="Migrations\201407170937233_t1.Designer.cs">
+      <DependentUpon>201407170937233_t1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407171036068_t3.cs" />
+    <Compile Include="Migrations\201407171036068_t3.Designer.cs">
+      <DependentUpon>201407171036068_t3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407171103524_t4.cs" />
+    <Compile Include="Migrations\201407171103524_t4.Designer.cs">
+      <DependentUpon>201407171103524_t4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
@@ -369,6 +391,13 @@
       <DependentUpon>Projects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowHomework.aspx.cs">
+      <DependentUpon>ShowHomework.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowHomework.aspx.designer.cs">
+      <DependentUpon>ShowHomework.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -407,6 +436,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201407170717377_a.resx">
       <DependentUpon>201407170717377_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407170937233_t1.resx">
+      <DependentUpon>201407170937233_t1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407171036068_t3.resx">
+      <DependentUpon>201407171036068_t3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407171103524_t4.resx">
+      <DependentUpon>201407171103524_t4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

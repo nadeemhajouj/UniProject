@@ -31,6 +31,7 @@
         <button id="showRightPush" type="button" class="btn btn-default col-md-offset-11">
              <span class="glyphicon glyphicon-align-justify"></span>
         </button>
+
             <asp:Button ID="AddAdverButton" runat="server" Text="Add Announcement" onclick="AddAdverButton_Click" class="btn btn-default col-md-offset-10" />            
         </div>
 

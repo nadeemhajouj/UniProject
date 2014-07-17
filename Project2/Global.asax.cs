@@ -19,7 +19,6 @@ namespace Project2
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
             //Initialize the Database
             Database.SetInitializer(new CourseDatabaseInitializer());
 

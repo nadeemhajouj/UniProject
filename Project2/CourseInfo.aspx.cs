@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Project2.Models;
 
 namespace Project2
 {
@@ -20,6 +21,7 @@ namespace Project2
             txtDesc.Text = Request.QueryString["desc"];
 
             txtYear.Text = Request.QueryString["year"];
+            
 
             if (string.IsNullOrWhiteSpace(Request.QueryString["year"]))
                 courseYear.Text = "";
@@ -37,6 +39,24 @@ namespace Project2
             /*string txt = (string)(Session["name"]);
             txtcourse.Text = txt;
             courseName.Text = txt;*/
+        }
+        protected void AddHomeworkButton_Click(object sender, EventArgs e)
+        {
+            string url = "AddHomework.aspx?CourseId=" + Request.QueryString["id"];
+            Response.Redirect(url);
+        }
+
+        public IQueryable<Homework> GetHomeworks()
+        {
+            int CourseId = int.Parse(Request.QueryString["id"]);
+            CourseContext cc = new CourseContext();
+            var query = from c in cc.Homeworks
+                        where c.CourseId.Equals(CourseId)
+                        select c;
+            Homework hh = query.First();
+            return query;
+
+
         }
     }
 }

@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="container">
-        
+        <asp:Button ID="AddHomeworkButton" runat="server" Text="Add Homework" onclick="AddHomeworkButton_Click" class="btn btn-default col-md-offset-10" />            
         <h2>
             <asp:Literal ID="txtHeader" runat="server"></asp:Literal>
         </h2>
@@ -62,9 +62,44 @@
                         <h3 class="panel-title">Course Homeworks</h3>
                     </div>
                     <div class="panel-body">
-                        <p>
-                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-                        </p>
+                      
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                                    <asp:ListView ID="HomeworkList" runat="server" DataKeyNames="HomId" GroupItemCount="100" ItemType="Project2.Models.Homework" SelectMethod="GetHomeworks" >
+                                        <GroupTemplate >
+                                            <tr id="itemPlaceholderContainer" runat="server">
+                                                <td id="itemPlaceholder" runat="server"></td>
+                                            </tr>
+                                        </GroupTemplate>
+
+                                        <ItemTemplate >
+                    
+                                           <div class="list-group" runat="server" >
+
+                                                <a href="<%#: "ShowHomework.aspx?HomId=" + Item.HomId %>" class="list-group-item"  >
+                                                    <h4 class="list-group-item-heading">
+                                                        <asp:Label runat="server"> <%#: Item.HomeworkName %>  .  </asp:Label>
+                                                    </h4>
+                                                    <%--<p class="list-group-item-text"><%#: Item.CourseDescription %></p>--%>
+                                                </a>
+                        
+                                            </div>
+
+                                        </ItemTemplate>
+                
+                                    </asp:ListView>
+                        
+                        
+                        
+                        
+                        
+                        
+
                     </div>
                 </div>
             <div class="panel panel-primary col-md-3 col-md-offset-1">
