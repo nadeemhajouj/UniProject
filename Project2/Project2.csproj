@@ -151,6 +151,7 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="AddAdver.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="Advertisements.aspx" />
     <Content Include="Contact.aspx" />
@@ -258,6 +259,13 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddAdver.aspx.cs">
+      <DependentUpon>AddAdver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAdver.aspx.designer.cs">
+      <DependentUpon>AddAdver.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -314,6 +322,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Logic\AddCourses.cs" />
+    <Compile Include="Logic\AdvertisementBuilder.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Migrations\201407151004189_e.cs" />
     <Compile Include="Migrations\201407151004189_e.Designer.cs">

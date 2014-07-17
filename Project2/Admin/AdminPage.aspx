@@ -41,7 +41,7 @@
             </td>
         </tr>
         <tr>
-            <td><asp:Label runat="server" ID="LabelAddDepartement">Course Year:</asp:Label></td>
+            <td><asp:Label runat="server" ID="LabelAddDepartement">Department:</asp:Label></td>
             <td>
                 <asp:DropDownList ID="SelectCourseDepartement" runat="server">
                     <asp:ListItem>Networks</asp:ListItem>
