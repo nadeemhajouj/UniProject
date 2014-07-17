@@ -330,7 +330,6 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
     <Compile Include="Models\Advertisement.cs" />
-    <Compile Include="Models\Class1.cs" />
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\CourseContext.cs" />
@@ -347,6 +346,7 @@
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\Team.cs" />
+    <Compile Include="Models\testClass.cs" />
     <Compile Include="Projects.aspx.cs">
       <DependentUpon>Projects.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
