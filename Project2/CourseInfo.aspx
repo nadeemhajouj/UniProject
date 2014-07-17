@@ -62,14 +62,8 @@
                         <h3 class="panel-title">Course Homeworks</h3>
                     </div>
                     <div class="panel-body">
-                      
                         
-                        
-                        
-                        
-                        
-                        
-                        
+                                    <%--show homeworks--%>
                                     <asp:ListView ID="HomeworkList" runat="server" DataKeyNames="HomId" GroupItemCount="100" ItemType="Project2.Models.Homework" SelectMethod="GetHomeworks" >
                                         <GroupTemplate >
                                             <tr id="itemPlaceholderContainer" runat="server">
@@ -94,12 +88,6 @@
                 
                                     </asp:ListView>
                         
-                        
-                        
-                        
-                        
-                        
-
                     </div>
                 </div>
             <div class="panel panel-primary col-md-3 col-md-offset-1">
