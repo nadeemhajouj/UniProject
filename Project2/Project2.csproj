@@ -170,6 +170,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\component.css" />
     <Content Include="Content\flexslider.css" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui.structure.min.css" />
+    <Content Include="Content\jquery-ui.theme.css" />
+    <Content Include="Content\jquery-ui.theme.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\table.css" />
     <Content Include="CourseInfo.aspx" />
@@ -194,6 +200,8 @@
     <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\respond.js" />
@@ -225,7 +233,6 @@
     <Content Include="Global.asax" />
     <Content Include="ShowHomework.aspx" />
     <Content Include="Site.Master" />
-    <Content Include="team\CreateTeam.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -362,6 +369,7 @@
     <Compile Include="Logic\CourseBuilder.cs" />
     <Compile Include="Logic\AdvertisementBuilder.cs" />
     <Compile Include="Logic\HomeworkBuilder.cs" />
+    <Compile Include="Logic\MessageBuilder.cs" />
     <Compile Include="Logic\PostBuilder.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Migrations\201407151004189_e.cs" />
@@ -396,9 +404,9 @@
     <Compile Include="Migrations\201407180122332_stdDepartement.Designer.cs">
       <DependentUpon>201407180122332_stdDepartement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201407180616027_stdCourses.cs" />
-    <Compile Include="Migrations\201407180616027_stdCourses.Designer.cs">
-      <DependentUpon>201407180616027_stdCourses.cs</DependentUpon>
+    <Compile Include="Migrations\201407180600251_Messages.cs" />
+    <Compile Include="Migrations\201407180600251_Messages.Designer.cs">
+      <DependentUpon>201407180600251_Messages.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
@@ -449,13 +457,6 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="team\CreateTeam.aspx.cs">
-      <DependentUpon>CreateTeam.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="team\CreateTeam.aspx.designer.cs">
-      <DependentUpon>CreateTeam.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -466,6 +467,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="team\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201407151004189_e.resx">
@@ -492,8 +494,8 @@
     <EmbeddedResource Include="Migrations\201407180122332_stdDepartement.resx">
       <DependentUpon>201407180122332_stdDepartement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201407180616027_stdCourses.resx">
-      <DependentUpon>201407180616027_stdCourses.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201407180600251_Messages.resx">
+      <DependentUpon>201407180600251_Messages.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
