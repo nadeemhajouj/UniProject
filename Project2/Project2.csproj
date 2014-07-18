@@ -428,6 +428,10 @@
     <Compile Include="Migrations\201407181000525_MaterialsChange3.Designer.cs">
       <DependentUpon>201407181000525_MaterialsChange3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201407181133305_Changes.cs" />
+    <Compile Include="Migrations\201407181133305_Changes.Designer.cs">
+      <DependentUpon>201407181133305_Changes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
     <Compile Include="Models\Advertisement.cs" />
@@ -532,6 +536,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201407181000525_MaterialsChange3.resx">
       <DependentUpon>201407181000525_MaterialsChange3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407181133305_Changes.resx">
+      <DependentUpon>201407181133305_Changes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -20,8 +20,7 @@ namespace Project2
             string userId = User.Identity.GetUserId();
             int CourseId = int.Parse(Request.QueryString["id"]);
 
-            using (CourseContext cc = new CourseContext())
-            {
+            
                 var check = from c in cc.StdCourses
                     where c.CourseID == CourseId && c.StdId == userId
                     select c;
@@ -30,13 +29,8 @@ namespace Project2
                     UnfollowCourse.Visible = true;
                 else
                     FollowCourse.Visible = true;
-            }
-
-            
-
-            int courseId = 2;
             thisCourse = (from c in cc.Courses
-                where c.CourseID == courseId
+                where c.CourseID == CourseId
                 select c).First();
             txtCourse.Text = Request.QueryString["name"];
             courseName.Text = Request.QueryString["name"];
@@ -173,6 +167,8 @@ namespace Project2
                          "&id=" + CourseId;
 
             Response.Redirect(url);
+        }
+
         protected void uploadFile_Click(object sender, EventArgs e)
         {
             if (UploadImages.HasFiles)
