@@ -29,6 +29,7 @@ namespace Project2.Models
         public int? CourseID { get; set; }
          
         public string Author { get; set; }
+        public virtual ICollection<Material> Materials { get; set; } 
 
     }
 }

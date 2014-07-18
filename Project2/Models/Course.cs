@@ -43,6 +43,7 @@ namespace Project2.Models
         public virtual ICollection<StdCourse> StdCourses { get; set; }
 
         public virtual ICollection<Question> Questions { get; set; }
+        public virtual ICollection<Material> Materials { get; set; }  
 
     }
 }
