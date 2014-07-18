@@ -414,6 +414,34 @@
     <Compile Include="Migrations\201407181041387_TeamPage.Designer.cs">
       <DependentUpon>201407181041387_TeamPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201407180743372_mess.cs" />
+    <Compile Include="Migrations\201407180743372_mess.Designer.cs">
+      <DependentUpon>201407180743372_mess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407180934538_Materials.cs" />
+    <Compile Include="Migrations\201407180934538_Materials.Designer.cs">
+      <DependentUpon>201407180934538_Materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407180952253_MaterialsChange.cs" />
+    <Compile Include="Migrations\201407180952253_MaterialsChange.Designer.cs">
+      <DependentUpon>201407180952253_MaterialsChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407180953428_MaterialsChange1.cs" />
+    <Compile Include="Migrations\201407180953428_MaterialsChange1.Designer.cs">
+      <DependentUpon>201407180953428_MaterialsChange1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407180957022_MaterialsChange2.cs" />
+    <Compile Include="Migrations\201407180957022_MaterialsChange2.Designer.cs">
+      <DependentUpon>201407180957022_MaterialsChange2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407181000525_MaterialsChange3.cs" />
+    <Compile Include="Migrations\201407181000525_MaterialsChange3.Designer.cs">
+      <DependentUpon>201407181000525_MaterialsChange3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407181239077_afteruploadmat.cs" />
+    <Compile Include="Migrations\201407181239077_afteruploadmat.Designer.cs">
+      <DependentUpon>201407181239077_afteruploadmat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
     <Compile Include="Models\Advertisement.cs" />
@@ -423,6 +451,7 @@
     <Compile Include="Models\CourseDatabaseInitializer.cs" />
     <Compile Include="Models\Homework.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Material.cs" />
     <Compile Include="Models\Message.cs" />
     <Compile Include="Models\Notification.cs" />
     <Compile Include="Models\Post.cs" />
@@ -510,8 +539,29 @@
     <EmbeddedResource Include="Migrations\201407171103524_t4.resx">
       <DependentUpon>201407171103524_t4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201407181041387_TeamPage.resx">
-      <DependentUpon>201407181041387_TeamPage.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201407180122332_stdDepartement.resx">
+      <DependentUpon>201407180122332_stdDepartement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407180743372_mess.resx">
+      <DependentUpon>201407180743372_mess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407180934538_Materials.resx">
+      <DependentUpon>201407180934538_Materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407180952253_MaterialsChange.resx">
+      <DependentUpon>201407180952253_MaterialsChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407180953428_MaterialsChange1.resx">
+      <DependentUpon>201407180953428_MaterialsChange1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407180957022_MaterialsChange2.resx">
+      <DependentUpon>201407180957022_MaterialsChange2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407181000525_MaterialsChange3.resx">
+      <DependentUpon>201407181000525_MaterialsChange3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407181239077_afteruploadmat.resx">
+      <DependentUpon>201407181239077_afteruploadmat.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

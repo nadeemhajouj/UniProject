@@ -13,76 +13,31 @@ namespace Project2 {
     public partial class AddAdver {
         
         /// <summary>
-        /// LabelAddHeader control.
+        /// AnnouncementHeader control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddHeader;
+        protected global::System.Web.UI.WebControls.TextBox AnnouncementHeader;
         
         /// <summary>
-        /// AddAdvertisementHeader control.
+        /// SelectAcademicYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AddAdvertisementHeader;
+        protected global::System.Web.UI.WebControls.DropDownList SelectAcademicYear;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// AnnouncementBody control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-        
-        /// <summary>
-        /// LabelAddBody control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddBody;
-        
-        /// <summary>
-        /// AddAdvertisementBody control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AddAdvertisementBody;
-        
-        /// <summary>
-        /// RequiredFieldValidator2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-        
-        /// <summary>
-        /// LabelAddYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddYear;
-        
-        /// <summary>
-        /// SelectAdvertisementYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList SelectAdvertisementYear;
+        protected global::System.Web.UI.WebControls.TextBox AnnouncementBody;
         
         /// <summary>
         /// AddAdverButton control.
@@ -94,13 +49,13 @@ namespace Project2 {
         protected global::System.Web.UI.WebControls.Button AddAdverButton;
         
         /// <summary>
-        /// LabelAddStatus control.
+        /// UploadButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddStatus;
+        protected global::System.Web.UI.WebControls.Button UploadButton;
         
         /// <summary>
         /// SuccessAlert control.

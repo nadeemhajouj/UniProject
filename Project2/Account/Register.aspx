@@ -36,6 +36,15 @@
         </div>
         
         <div class="form-group">
+                <asp:Label runat="server" AssociatedControlID="DateofBirth" CssClass="col-md-2 control-label">Homework Due Date</asp:Label>
+                <div class="col-md-10">
+                    <asp:Literal ID="DateofBirth" runat="server"><input type="text" id="datepicker" class="form-control"></asp:Literal>
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="DateofBirth"
+                        CssClass="text-danger" ErrorMessage="The Date of Birth field is required." />
+                </div>
+            </div>
+
+        <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="SelectAcademicYear" CssClass="col-md-2 control-label">Academic Year</asp:Label>
             <div class="col-md-3">
                 <asp:DropDownList ID="SelectAcademicYear" runat="server" CssClass="form-control">
@@ -97,5 +106,21 @@
             </div>
         </div>
     </div>
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+
+        function pageLoad() {
+            $(".datepicker").datepicker(); // Will run at every postback/AsyncPostback
+        }
+    </script>
     
 </asp:Content>

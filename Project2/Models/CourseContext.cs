@@ -24,6 +24,7 @@ namespace Project2.Models
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Message> Messages { get; set; }
         public DbSet<Team> Teams { get; set; } 
+        public DbSet<Material> Materials { get; set; } 
         public DbSet<StdCourse> StdCourses { get; set; }
     }
 
