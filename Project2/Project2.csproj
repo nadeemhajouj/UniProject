@@ -161,6 +161,7 @@
     <Content Include="Content\component.css" />
     <Content Include="Content\flexslider.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\table.css" />
     <Content Include="CourseInfo.aspx" />
     <Content Include="Courses.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -168,6 +169,7 @@
     <Content Include="img\2.jpg" />
     <Content Include="img\3.jpg" />
     <Content Include="img\logo .gif" />
+    <Content Include="js\jquery.table.addrow.js" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
