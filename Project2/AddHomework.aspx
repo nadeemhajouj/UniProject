@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddHomework.aspx.cs" Inherits="Project2.AddHomework" %>
+﻿<%@ Page Title="New Homework" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddHomework.aspx.cs" Inherits="Project2.AddHomework" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
 
@@ -27,9 +27,9 @@
             </div>
             
             <div class="form-group">
-                <asp:Label runat="server" AssociatedControlID="HomeworkDesc" CssClass="col-md-2 control-label">Homework Description</asp:Label>
+                <asp:Label runat="server" AssociatedControlID="HomeworkDesc" CssClass="col-md-2 control-label">Homework Due Date</asp:Label>
                 <div class="col-md-10">
-                    <input type="text" id="datepicker">
+                    <input type="text" id="datepicker" class="form-control">
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="HomeworkDesc"
                         CssClass="text-danger" ErrorMessage="The Homework Body field is required." />
                 </div>
@@ -40,7 +40,7 @@
                 <div class="col-md-10">
                     <asp:TextBox runat="server" ID="HomeworkDesc" CssClass="form-control" TextMode="MultiLine" Height="200" />
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="HomeworkDesc"
-                        CssClass="text-danger" ErrorMessage="The Homework Body field is required." />
+                        CssClass="text-danger" ErrorMessage="The Due Date field is required." />
                 </div>
             </div>
             
@@ -75,7 +75,7 @@
                 changeYear: true
             });
         });
-  </script>
+    </script>
 
 
 
