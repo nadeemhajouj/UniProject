@@ -21,16 +21,18 @@ namespace Project2.Account
 
 
 
-                result = manager.AddToRole(user.Id, "Teacher");
+                result = manager.AddToRole(user.Id, "Student");
 
-                var std = new Teacher();
+                var std = new Student();
                 std.FirstName = FirstName.Text;
                 std.LastName = lastName.Text;
                 std.UserId = user.Id;
-                //std.BirthDate = DateTime.Now;
-
+                std.AcademicYear = int.Parse(SelectAcademicYear.SelectedItem.Text);
+                std.Departement = SelectDepartement.SelectedItem.Text;
+                std.BirthDate = DateTime.Now;
+                std.Email = EmailAddress.Text;
                 CourseContext cc = new CourseContext();
-                cc.Teachers.Add(std);
+                cc.Students.Add(std);
                 cc.SaveChanges();
                 
                 

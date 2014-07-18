@@ -4,6 +4,21 @@
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
+    
+    <hr/>
+
+    <div class="row">
+        
+    <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+            <li><a href="Profile.aspx">Profile</a></li>
+            <li><a>Messages</a></li>
+            <li><a>Teams</a></li>
+            <li class="active"><a href="Manage.aspx">Settings</a></li>
+        </ul>
+    </div>
+    
+    <div class="col-md-10">    
 
     <div>
         <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
@@ -132,6 +147,10 @@
             </section>
 
         </div>
+    </div>
+        
+    </div>
+    
     </div>
 
 </asp:Content>

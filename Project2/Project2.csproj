@@ -39,6 +39,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NetSpell.SpellChecker, Version=2.1.7.24956, Culture=neutral, PublicKeyToken=318b389f0db66e46, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\NetSpell.SpellChecker.dll</HintPath>
+    </Reference>
+    <Reference Include="RichTextEditor, Version=8.1.0.0, Culture=neutral, PublicKeyToken=3858aa6802b1223a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\RichTextEditor.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -148,7 +156,9 @@
     <Content Include="About.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\Messages.aspx" />
     <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Profile.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="AddAdver.aspx" />
@@ -161,6 +171,12 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\component.css" />
     <Content Include="Content\flexslider.css" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.min.css" />
+    <Content Include="Content\jquery-ui.structure.css" />
+    <Content Include="Content\jquery-ui.structure.min.css" />
+    <Content Include="Content\jquery-ui.theme.css" />
+    <Content Include="Content\jquery-ui.theme.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\table.css" />
     <Content Include="CourseInfo.aspx" />
@@ -170,6 +186,7 @@
     <Content Include="img\2.jpg" />
     <Content Include="img\3.jpg" />
     <Content Include="img\logo .gif" />
+    <Content Include="img\profImg.png" />
     <Content Include="js\jquery.table.addrow.js" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -184,6 +201,8 @@
     <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\respond.js" />
@@ -216,7 +235,6 @@
     <Content Include="ShowHomework.aspx" />
     <Content Include="Site.Master" />
     <Content Include="team\CreateTeam.aspx" />
-    <Content Include="team\ShowTeams.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -245,12 +263,26 @@
     <Compile Include="Account\Manage.aspx.designer.cs">
       <DependentUpon>Manage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\Messages.aspx.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Messages.aspx.designer.cs">
+      <DependentUpon>Messages.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\OpenAuthProviders.ascx.cs">
       <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
       <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -346,6 +378,7 @@
     <Compile Include="Logic\CourseBuilder.cs" />
     <Compile Include="Logic\AdvertisementBuilder.cs" />
     <Compile Include="Logic\HomeworkBuilder.cs" />
+    <Compile Include="Logic\MessageBuilder.cs" />
     <Compile Include="Logic\PostBuilder.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Migrations\201407151004189_e.cs" />
@@ -375,14 +408,6 @@
     <Compile Include="Migrations\201407171103524_t4.cs" />
     <Compile Include="Migrations\201407171103524_t4.Designer.cs">
       <DependentUpon>201407171103524_t4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201407180207433_StudentTeams.cs" />
-    <Compile Include="Migrations\201407180207433_StudentTeams.Designer.cs">
-      <DependentUpon>201407180207433_StudentTeams.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201407180631498_question.cs" />
-    <Compile Include="Migrations\201407180631498_question.Designer.cs">
-      <DependentUpon>201407180631498_question.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
@@ -440,13 +465,6 @@
     <Compile Include="team\CreateTeam.aspx.designer.cs">
       <DependentUpon>CreateTeam.aspx</DependentUpon>
     </Compile>
-    <Compile Include="team\ShowTeams.aspx.cs">
-      <DependentUpon>ShowTeams.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="team\ShowTeams.aspx.designer.cs">
-      <DependentUpon>ShowTeams.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -457,6 +475,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="team\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201407151004189_e.resx">
@@ -479,12 +498,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201407171103524_t4.resx">
       <DependentUpon>201407171103524_t4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201407180207433_StudentTeams.resx">
-      <DependentUpon>201407180207433_StudentTeams.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201407180631498_question.resx">
-      <DependentUpon>201407180631498_question.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

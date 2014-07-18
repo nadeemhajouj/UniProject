@@ -34,10 +34,11 @@
                     CssClass="text-danger" ErrorMessage="The user name field is required." />
             </div>
         </div>
+        
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="SelectAcademicYear" CssClass="col-md-2 control-label">Academic Year</asp:Label>
-            <div class="col-md-10">
-                <asp:DropDownList ID="SelectAcademicYear" runat="server" CssClass="form-control" OnSelectedIndexChanged="OnChange(this.form.SelectAcademicYear)">
+            <div class="col-md-3">
+                <asp:DropDownList ID="SelectAcademicYear" runat="server" CssClass="form-control">
                     <asp:ListItem>1</asp:ListItem>
                     <asp:ListItem>2</asp:ListItem>
                     <asp:ListItem>3</asp:ListItem>
@@ -48,16 +49,30 @@
                     CssClass="text-danger" ErrorMessage="The Academic Year field is required." />
             </div>
         </div>
+        
         <div class="form-group">
-            <asp:Label runat="server" name="dep1" AssociatedControlID="SelectDepartement" CssClass="col-md-2 control-label" Visible="False">Departement</asp:Label>
-            <div class="col-md-10" >
-                <asp:DropDownList ID="SelectDepartement" name="dep2" runat="server" CssClass="form-control" Visible="False">
+            <asp:Label runat="server" AssociatedControlID="SelectDepartement" CssClass="col-md-2 control-label">Academic Year</asp:Label>
+            <div class="col-md-3">
+                <asp:DropDownList ID="SelectDepartement" runat="server" CssClass="form-control">
+                    <asp:ListItem>Basic Science</asp:ListItem>
                     <asp:ListItem>Networks</asp:ListItem>
                     <asp:ListItem>Software Engineering</asp:ListItem>
-                    <asp:ListItem>Artificial Intelligence</asp:ListItem>
+                    <asp:ListItem>Artificial Intelligence</asp:ListItem> 
                 </asp:DropDownList>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="SelectDepartement"
+                    CssClass="text-danger" ErrorMessage="The Departement field is required." />
             </div>
         </div>
+        
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="EmailAddress" CssClass="col-md-2 control-label">Email Address</asp:Label>
+            <div class="col-md-3">
+                <asp:TextBox runat="server" ID="EmailAddress" TextMode="Email" CssClass="form-control" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="EmailAddress"
+                    CssClass="text-danger" ErrorMessage="The Email Address field is required." />
+            </div>
+        </div>
+
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>
             <div class="col-md-10">
@@ -83,16 +98,4 @@
         </div>
     </div>
     
-    <script>
-        function OnChange(dd) {
-            var index = dd.selectedIndex;
-            var selDep1 = document.getElementsByName("dep1");
-            var selDep2 = document.getElementsByName("dep2");
-
-            if (index >= 2) {
-                selDep1.visible = true;
-                selDep2.visible = true;
-            }
-        }
-    </script>
 </asp:Content>
