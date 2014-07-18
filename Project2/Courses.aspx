@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Courses" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Courses.aspx.cs" Inherits="Project2.Courses" %>
+﻿    <%@ Page Title="Courses" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Courses.aspx.cs" Inherits="Project2.Courses" %>
 <%@ Import Namespace="Project2.Models" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -126,13 +126,13 @@
                     
                    <div class="list-group" runat="server" >
 
-                        <a href="<%#: "CourseInfo.aspx?name=" + Item.CourseName + "&teacherFN=" + Item.Teachers.First().FirstName + "&teacherLN=" + Item.Teachers.First().LastName + "&desc=" + Item.CourseDescription + "&year=" + Item.CourseYear %>" class="list-group-item"  >
+                        <a href="<%#: "CourseInfo.aspx?name=" + Item.CourseName + "&teacherFN=" + Item.Teachers.First().FirstName + "&teacherLN=" + Item.Teachers.First().LastName + "&desc=" + Item.CourseDescription + "&year=" + Item.CourseYear + "&id=" + Item.CourseID %>" class="list-group-item"  >
                             <h4 class="list-group-item-heading">
                                 <asp:Label runat="server"> <%#: Item.CourseName %>  .  </asp:Label>
                                 
                                 <asp:Label Text="<%#: Item.Teachers.First().FirstName +' '+Item.Teachers.First().LastName %> " runat="server"></asp:Label>
                             </h4>
-                            <p class="list-group-item-text"><%#: Item.CourseDescription %></p>
+                            <%--<p class="list-group-item-text"><%#: Item.CourseDescription %></p>--%>
                         </a>
                         
                     </div>

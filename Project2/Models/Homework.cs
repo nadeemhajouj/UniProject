@@ -24,10 +24,10 @@ namespace Project2.Models
         public string HomeworkDesc { get; set; }
 
         [Required, DataType(DataType.DateTime)]
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
 
         [Required, DataType(DataType.DateTime)]
-        public string DueDate { get; set; }
+        public DateTime DueDate { get; set; }
 
         public int CourseId { get; set; }
 

@@ -12,6 +12,7 @@ namespace Project2.Models
         public Student()
         {
             this.Courses = new HashSet<Course>();
+            this.Teams = new HashSet<Team>();
         }
 
         [ScaffoldColumn(false)]
@@ -38,5 +39,6 @@ namespace Project2.Models
         public string Bio { get; set; }
 
         public virtual ICollection<Course> Courses { get; set; }
+        public virtual ICollection<Team> Teams { get; set; }
     }
 }

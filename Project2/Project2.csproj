@@ -151,14 +151,18 @@
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="AddAdver.aspx" />
+    <Content Include="AddHomework.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="Advertisements.aspx" />
+    <Content Include="AskQuestion.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\component.css" />
     <Content Include="Content\flexslider.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\table.css" />
     <Content Include="CourseInfo.aspx" />
     <Content Include="Courses.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -166,6 +170,7 @@
     <Content Include="img\2.jpg" />
     <Content Include="img\3.jpg" />
     <Content Include="img\logo .gif" />
+    <Content Include="js\jquery.table.addrow.js" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -208,7 +213,10 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="ShowHomework.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="team\CreateTeam.aspx" />
+    <Content Include="team\ShowTeams.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -258,6 +266,20 @@
     <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddAdver.aspx.cs">
+      <DependentUpon>AddAdver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddAdver.aspx.designer.cs">
+      <DependentUpon>AddAdver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddHomework.aspx.cs">
+      <DependentUpon>AddHomework.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddHomework.aspx.designer.cs">
+      <DependentUpon>AddHomework.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,6 +304,13 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="AskQuestion.aspx.cs">
+      <DependentUpon>AskQuestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AskQuestion.aspx.designer.cs">
+      <DependentUpon>AskQuestion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -313,7 +342,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Logic\AddCourses.cs" />
+    <Compile Include="Logic\CommentBuilder.cs" />
+    <Compile Include="Logic\CourseBuilder.cs" />
+    <Compile Include="Logic\AdvertisementBuilder.cs" />
+    <Compile Include="Logic\HomeworkBuilder.cs" />
+    <Compile Include="Logic\PostBuilder.cs" />
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Migrations\201407151004189_e.cs" />
     <Compile Include="Migrations\201407151004189_e.Designer.cs">
@@ -326,6 +359,30 @@
     <Compile Include="Migrations\201407170158354_AddCourseContext.cs" />
     <Compile Include="Migrations\201407170158354_AddCourseContext.Designer.cs">
       <DependentUpon>201407170158354_AddCourseContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407170717377_a.cs" />
+    <Compile Include="Migrations\201407170717377_a.Designer.cs">
+      <DependentUpon>201407170717377_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407170937233_t1.cs" />
+    <Compile Include="Migrations\201407170937233_t1.Designer.cs">
+      <DependentUpon>201407170937233_t1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407171036068_t3.cs" />
+    <Compile Include="Migrations\201407171036068_t3.Designer.cs">
+      <DependentUpon>201407171036068_t3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407171103524_t4.cs" />
+    <Compile Include="Migrations\201407171103524_t4.Designer.cs">
+      <DependentUpon>201407171103524_t4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407180207433_StudentTeams.cs" />
+    <Compile Include="Migrations\201407180207433_StudentTeams.Designer.cs">
+      <DependentUpon>201407180207433_StudentTeams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201407180631498_question.cs" />
+    <Compile Include="Migrations\201407180631498_question.Designer.cs">
+      <DependentUpon>201407180631498_question.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
@@ -354,6 +411,13 @@
       <DependentUpon>Projects.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowHomework.aspx.cs">
+      <DependentUpon>ShowHomework.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowHomework.aspx.designer.cs">
+      <DependentUpon>ShowHomework.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -369,6 +433,20 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="team\CreateTeam.aspx.cs">
+      <DependentUpon>CreateTeam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="team\CreateTeam.aspx.designer.cs">
+      <DependentUpon>CreateTeam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="team\ShowTeams.aspx.cs">
+      <DependentUpon>ShowTeams.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="team\ShowTeams.aspx.designer.cs">
+      <DependentUpon>ShowTeams.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -389,6 +467,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201407170158354_AddCourseContext.resx">
       <DependentUpon>201407170158354_AddCourseContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407170717377_a.resx">
+      <DependentUpon>201407170717377_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407170937233_t1.resx">
+      <DependentUpon>201407170937233_t1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407171036068_t3.resx">
+      <DependentUpon>201407171036068_t3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407171103524_t4.resx">
+      <DependentUpon>201407171103524_t4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407180207433_StudentTeams.resx">
+      <DependentUpon>201407180207433_StudentTeams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407180631498_question.resx">
+      <DependentUpon>201407180631498_question.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

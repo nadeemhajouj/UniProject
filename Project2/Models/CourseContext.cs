@@ -18,7 +18,11 @@ namespace Project2.Models
         public DbSet<Advertisement> Advertisements { get; set; }
 
         public DbSet<Student> Students { get; set; }
-
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Homework> Homeworks { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
     }
 

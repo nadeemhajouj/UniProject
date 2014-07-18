@@ -1,8 +1,12 @@
 ﻿<%@ Page Title="Advertisements" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Advertisements.aspx.cs" Inherits="Project2.Advertisements" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+
     
+
     <div id="men" class="cbp-spmenu-push">
+        
 
     <div class="cbp-spmenu-push">
         <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
@@ -21,13 +25,14 @@
         
         <div class="row">
 
-        <h2 class="col-md-2">Advertisements</h2>
+        <h2 class="col-md-2">Announcements</h2>
         
 
         <button id="showRightPush" type="button" class="btn btn-default col-md-offset-11">
              <span class="glyphicon glyphicon-align-justify"></span>
         </button>
-            
+
+            <asp:Button ID="AddAdverButton" runat="server" Text="Add Announcement" onclick="AddAdverButton_Click" class="btn btn-default col-md-offset-10" />            
         </div>
 
         <hr/>
@@ -138,11 +143,11 @@
                         </div>
                        
                        <div class="panel-footer" align="right"><%#: Item.AdvertisementDateTime.ToString() %></div>
-                       
-
+   
                         </div>
 
                 </ItemTemplate>
+
                 
             </asp:ListView>
                 

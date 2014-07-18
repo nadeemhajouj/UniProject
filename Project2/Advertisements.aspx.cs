@@ -12,11 +12,22 @@ namespace Project2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (HttpContext.Current.User.IsInRole("Administrator"))
+            {
+                AddAdverButton.Visible = true;
+
+            }
+
+        }
+        protected void AddAdverButton_Click(object sender, EventArgs e)
+        {
+
+            Response.Redirect("AddAdver.aspx");
         }
 
         public IQueryable<Advertisement> GetAdvertisements()
         {
+            
             var query = from a in Courses.cc.Advertisements
                 select a;
 
