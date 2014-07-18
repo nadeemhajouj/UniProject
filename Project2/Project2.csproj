@@ -235,6 +235,7 @@
     <Content Include="ShowHomework.aspx" />
     <Content Include="Site.Master" />
     <Content Include="team\CreateTeam.aspx" />
+    <Content Include="team\TeamPage.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -409,6 +410,10 @@
     <Compile Include="Migrations\201407171103524_t4.Designer.cs">
       <DependentUpon>201407171103524_t4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201407181041387_TeamPage.cs" />
+    <Compile Include="Migrations\201407181041387_TeamPage.Designer.cs">
+      <DependentUpon>201407181041387_TeamPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
     <Compile Include="Models\Advertisement.cs" />
@@ -465,6 +470,13 @@
     <Compile Include="team\CreateTeam.aspx.designer.cs">
       <DependentUpon>CreateTeam.aspx</DependentUpon>
     </Compile>
+    <Compile Include="team\TeamPage.aspx.cs">
+      <DependentUpon>TeamPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="team\TeamPage.aspx.designer.cs">
+      <DependentUpon>TeamPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -475,7 +487,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="team\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201407151004189_e.resx">
@@ -498,6 +509,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201407171103524_t4.resx">
       <DependentUpon>201407171103524_t4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407181041387_TeamPage.resx">
+      <DependentUpon>201407181041387_TeamPage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

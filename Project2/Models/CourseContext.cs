@@ -16,15 +16,15 @@ namespace Project2.Models
         public DbSet<Course> Courses { get; set; }
         public DbSet<Project> Projects { get; set; }
         public DbSet<Advertisement> Advertisements { get; set; }
-
         public DbSet<Student> Students { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<Comment> Comments { get; set; }
-        
         public DbSet<Question> Questions { get; set; }
         public DbSet<Homework> Homeworks { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
-        public DbSet<Message> Messages { get; set; } 
+        public DbSet<Message> Messages { get; set; }
+        public DbSet<Team> Teams { get; set; } 
+        public DbSet<StdCourse> StdCourses { get; set; }
     }
 
 }

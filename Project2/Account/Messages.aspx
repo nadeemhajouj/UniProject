@@ -65,6 +65,7 @@
 
 
                     </div>
+
                     <div id="tabs-2">
                         <asp:ListView ID="RecMessageList" runat="server" DataKeyNames="MessId" GroupItemCount="100" ItemType="Project2.Models.Message" SelectMethod="GetRecMessages">
                             <GroupTemplate>
