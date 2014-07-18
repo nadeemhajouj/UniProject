@@ -13,12 +13,39 @@ namespace Project2.Account {
     public partial class Messages {
         
         /// <summary>
-        /// Editor1 control.
+        /// To control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::RTE.Editor Editor1;
+        protected global::System.Web.UI.WebControls.TextBox To;
+        
+        /// <summary>
+        /// Subject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Subject;
+        
+        /// <summary>
+        /// Body control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::RTE.Editor Body;
+        
+        /// <summary>
+        /// SendMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button SendMessage;
     }
 }

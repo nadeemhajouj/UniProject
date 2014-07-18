@@ -13,5 +13,10 @@ namespace Project2.Account
         {
 
         }
+
+        protected void SendMessage_OnClick(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

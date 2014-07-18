@@ -2,6 +2,8 @@
 <%@ Register TagPrefix="RTE" Namespace="RTE" Assembly="RichTextEditor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
+    <div class="container">
+
     <div class="row">
         <h2><%: User.Identity.GetUserName() %> Messages</h2>
     </div>
@@ -27,13 +29,43 @@
               <li><a>Sent Messages</a></li>
             </ul>
             
-            
+            <br/>
 
-            <RTE:Editor ID="Editor1" ToolbarItems="bold,italic" ContentCss="example.css" Text="Type here" runat="server" />
+            <div class="form-group">
+                <asp:Label runat="server" AssociatedControlID="To" CssClass="col-md-2 control-label">To:</asp:Label>
+                <div class="col-md-10">
+                    <asp:TextBox runat="server" ID="To" CssClass="form-control" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="To"
+                        CssClass="text-danger" ErrorMessage="The To field is required." />
+                </div>
+            </div>
             
+            <div class="form-group">
+                <asp:Label runat="server" AssociatedControlID="Subject" CssClass="col-md-2 control-label">Subject:</asp:Label>
+                <div class="col-md-10">
+                    <asp:TextBox runat="server" ID="Subject" CssClass="form-control" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Subject"
+                        CssClass="text-danger" ErrorMessage="The Subject field is required." />
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <asp:Label runat="server" AssociatedControlID="Body" CssClass="col-md-2 control-label">Body:</asp:Label>
+                <div class="col-md-10">
+                    <RTE:Editor ID="Body" ToolbarItems="bold,italic" ContentCss="example.css" Text="Type here" runat="server" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Body"
+                        CssClass="text-danger" ErrorMessage="The Subject field is required." />
+                </div>
+            </div>
+
+            <div class="col-md-offset-10">
+                <asp:Button runat="server" ID="SendMessage" CssClass="btn btn-primary" Text="Send Message" OnClick="SendMessage_OnClick"/>
+            </div>
 
         </div>
 
+    </div>
+        
     </div>
 
 </asp:Content>
