@@ -27,11 +27,60 @@ namespace Project2
 
         public IQueryable<Advertisement> GetAdvertisements()
         {
-            
-            var query = from a in Courses.cc.Advertisements
-                select a;
+            CourseContext cc = new CourseContext();
+            int academicYear = 1;
 
-            return query;
+            if (string.IsNullOrWhiteSpace(Request.QueryString["aYear"]))
+            {
+                academicYear = 1;
+            }
+            else
+            {
+                academicYear = int.Parse(Request.QueryString["aYear"]);
+            }
+
+
+            if (academicYear == 1)
+            {
+                var query = from c in cc.Advertisements
+                            where c.AdvertisementYear == 1
+                            select c;
+
+                return query;
+            }
+            else if (academicYear == 2)
+            {
+                var query = from c in cc.Advertisements
+                            where c.AdvertisementYear == 2
+                            select c;
+
+                return query;
+            }
+            else if (academicYear == 3)
+            {
+                var query = from c in cc.Advertisements
+                            where c.AdvertisementYear == 3
+                            select c;
+
+                return query;
+            }
+            else if (academicYear == 4)
+            {
+                var query = from c in cc.Advertisements
+                            where c.AdvertisementYear == 4
+                            select c;
+
+                return query;
+            }
+            else
+            {
+                var query = from c in cc.Advertisements
+                            where c.AdvertisementYear == 5
+                            select c;
+
+                return query;
+            }
+            return null;
         }
     }
 }

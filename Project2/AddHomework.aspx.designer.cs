@@ -13,58 +13,31 @@ namespace Project2 {
     public partial class AddHomework {
         
         /// <summary>
-        /// LabelAddHeader control.
+        /// HomeworkName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddHeader;
+        protected global::System.Web.UI.WebControls.TextBox HomeworkName;
         
         /// <summary>
-        /// AddHomeworkHeader control.
+        /// HomeworkCourse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AddHomeworkHeader;
+        protected global::System.Web.UI.WebControls.TextBox HomeworkCourse;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// HomeworkDesc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-        
-        /// <summary>
-        /// LabelAddBody control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddBody;
-        
-        /// <summary>
-        /// AddHomeworkBody control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AddHomeworkBody;
-        
-        /// <summary>
-        /// RequiredFieldValidator2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.TextBox HomeworkDesc;
         
         /// <summary>
         /// AddHomeworkButton control.
@@ -76,13 +49,13 @@ namespace Project2 {
         protected global::System.Web.UI.WebControls.Button AddHomeworkButton;
         
         /// <summary>
-        /// LabelAddStatus control.
+        /// UploadButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelAddStatus;
+        protected global::System.Web.UI.WebControls.Button UploadButton;
         
         /// <summary>
         /// SuccessAlert control.

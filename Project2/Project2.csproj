@@ -404,9 +404,9 @@
     <Compile Include="Migrations\201407180122332_stdDepartement.Designer.cs">
       <DependentUpon>201407180122332_stdDepartement.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201407180600251_Messages.cs" />
-    <Compile Include="Migrations\201407180600251_Messages.Designer.cs">
-      <DependentUpon>201407180600251_Messages.cs</DependentUpon>
+    <Compile Include="Migrations\201407180743372_mess.cs" />
+    <Compile Include="Migrations\201407180743372_mess.Designer.cs">
+      <DependentUpon>201407180743372_mess.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
@@ -494,8 +494,8 @@
     <EmbeddedResource Include="Migrations\201407180122332_stdDepartement.resx">
       <DependentUpon>201407180122332_stdDepartement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201407180600251_Messages.resx">
-      <DependentUpon>201407180600251_Messages.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201407180743372_mess.resx">
+      <DependentUpon>201407180743372_mess.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
