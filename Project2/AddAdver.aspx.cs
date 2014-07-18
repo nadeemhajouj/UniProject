@@ -26,7 +26,7 @@ namespace Project2
 
             string author = HttpContext.Current.User.Identity.GetUserId();
             AdvertisementBuilder AdverBuilder = new AdvertisementBuilder();
-            bool addSuccess = AdverBuilder.AddAdvertisement(AddAdvertisementHeader.Text, AddAdvertisementBody.Text, SelectAdvertisementYear.SelectedItem.Text, 2, author);
+            bool addSuccess = AdverBuilder.AddAdvertisement(AnnouncementHeader.Text, AnnouncementBody.Text, SelectAcademicYear.SelectedItem.Text, 2, author);
 
             if (addSuccess)
             {

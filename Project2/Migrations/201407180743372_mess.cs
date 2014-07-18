@@ -3,7 +3,7 @@ namespace Project2.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Messages : DbMigration
+    public partial class mess : DbMigration
     {
         public override void Up()
         {

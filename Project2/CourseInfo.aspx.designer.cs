@@ -22,24 +22,6 @@ namespace Project2 {
         protected global::System.Web.UI.WebControls.Literal txtHeader;
         
         /// <summary>
-        /// courseYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label courseYear;
-        
-        /// <summary>
-        /// courseName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label courseName;
-        
-        /// <summary>
         /// FollowCourse control.
         /// </summary>
         /// <remarks>
@@ -56,6 +38,24 @@ namespace Project2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button UnfollowCourse;
+        
+        /// <summary>
+        /// courseYear control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label courseYear;
+        
+        /// <summary>
+        /// courseName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label courseName;
         
         /// <summary>
         /// txtCourse control.

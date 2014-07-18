@@ -1,8 +1,63 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddAdver.aspx.cs" Inherits="Project2.AddAdver" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h3>Add Advertisement:</h3>
     
-    <table>
+    <h2>Add Announcement</h2>
+    
+    <hr/>
+    
+    <div class="row">
+        
+        <div class="form-horizontal">
+            
+            <div class="form-group">
+                <asp:Label runat="server" AssociatedControlID="AnnouncementHeader" CssClass="col-md-2 control-label">Announcement Header</asp:Label>
+                <div class="col-md-10">
+                    <asp:TextBox runat="server" ID="AnnouncementHeader" CssClass="form-control" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="AnnouncementHeader"
+                        CssClass="text-danger" ErrorMessage="The Announcement Header field is required." />
+                </div>
+            </div>
+            
+            <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="SelectAcademicYear" CssClass="col-md-2 control-label">Academic Year</asp:Label>
+            <div class="col-md-3">
+                <asp:DropDownList ID="SelectAcademicYear" runat="server" CssClass="form-control">
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem> 
+                    <asp:ListItem>5</asp:ListItem>
+                </asp:DropDownList>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="SelectAcademicYear"
+                    CssClass="text-danger" ErrorMessage="The Academic Year field is required." />
+            </div>
+        </div>
+
+            <div class="form-group">
+                <asp:Label runat="server" AssociatedControlID="AnnouncementBody" CssClass="col-md-2 control-label">Announcement Body</asp:Label>
+                <div class="col-md-10">
+                    <asp:TextBox runat="server" ID="AnnouncementBody" CssClass="form-control" TextMode="MultiLine" Height="200" />
+                    <asp:RequiredFieldValidator runat="server" ControlToValidate="AnnouncementBody"
+                        CssClass="text-danger" ErrorMessage="The Announcement Body field is required." />
+                </div>
+            </div>
+            
+            <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <asp:Button ID="AddAdverButton" runat="server" Text="Add Announcement" OnClick="AddAdverButton_Click" CssClass="btn btn-success"/>
+                <asp:Button ID="UploadButton" runat="server" Text="Upload" CssClass="btn btn-primary"/>
+            </div>
+        </div>
+
+        </div>
+        
+
+
+    </div>
+    
+
+
+    <%--<table>
         <tr>
             <td><asp:Label ID="LabelAddHeader" runat="server">Announcement Header:</asp:Label></td>
             <td>
@@ -40,7 +95,7 @@
     <p></p>
     <asp:Button ID="AddAdverButton" runat="server" Text="Add Advertisement" OnClick="AddAdverButton_Click" CssClass="btn btn-success"/>
     <asp:Label ID="LabelAddStatus" runat="server" Text=""></asp:Label>
-    <p></p>
+    <p></p>--%>
     
     
     <hr/>
