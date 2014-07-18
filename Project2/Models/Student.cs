@@ -25,6 +25,8 @@ namespace Project2.Models
         [Required, StringLength(20)]
         public string LastName { get; set; }
 
+        public string Departement { get; set; }
+
         public int AcademicYear { get; set; }
 
         [DataType(DataType.DateTime)]

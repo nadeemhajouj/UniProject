@@ -7,15 +7,7 @@ namespace Project2.Migrations
     {
         public override void Up()
         {
-            DropForeignKey("dbo.Projects", "HomId", "dbo.Homework");
-            DropIndex("dbo.Projects", new[] { "HomId" });
-            AddColumn("dbo.Homework", "HomeworkId", c => c.Int(nullable: false, identity: true));
-            AddColumn("dbo.Projects", "Homework_HomeworkId", c => c.Int());
-            DropPrimaryKey("dbo.Homework");
-            AddPrimaryKey("dbo.Homework", "HomeworkId");
-            CreateIndex("dbo.Projects", "Homework_HomeworkId");
-            AddForeignKey("dbo.Projects", "Homework_HomeworkId", "dbo.Homework", "HomeworkId");
-            DropColumn("dbo.Homework", "HomId");
+            
         }
         
         public override void Down()

@@ -367,6 +367,10 @@
     <Compile Include="Migrations\201407171103524_t4.Designer.cs">
       <DependentUpon>201407171103524_t4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201407180122332_stdDepartement.cs" />
+    <Compile Include="Migrations\201407180122332_stdDepartement.Designer.cs">
+      <DependentUpon>201407180122332_stdDepartement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
     <Compile Include="Models\Advertisement.cs" />
@@ -455,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201407171103524_t4.resx">
       <DependentUpon>201407171103524_t4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407180122332_stdDepartement.resx">
+      <DependentUpon>201407180122332_stdDepartement.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
