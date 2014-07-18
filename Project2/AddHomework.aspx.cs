@@ -24,7 +24,7 @@ namespace Project2
 
             string author = HttpContext.Current.User.Identity.GetUserId();
             HomeworkBuilder homeworkBuilder = new HomeworkBuilder();
-            DateTime DueDate = DateTime.Now;
+            DateTime DueDate = DateTime.Parse(DuDate.Text);
             int CourseId = int.Parse(Request.QueryString["CourseId"]) ;
             bool addSuccess = homeworkBuilder.AddHomework(HomeworkName.Text, HomeworkDesc.Text, DueDate,CourseId);
 

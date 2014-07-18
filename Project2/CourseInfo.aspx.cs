@@ -20,8 +20,7 @@ namespace Project2
             string userId = User.Identity.GetUserId();
             int CourseId = int.Parse(Request.QueryString["id"]);
 
-            using (CourseContext cc = new CourseContext())
-            {
+            
                 var check = from c in cc.StdCourses
                     where c.CourseID == CourseId && c.StdId == userId
                     select c;
@@ -30,11 +29,11 @@ namespace Project2
                     UnfollowCourse.Visible = true;
                 else
                     FollowCourse.Visible = true;
-            }
+            
 
             
 
-            int courseId = 2;
+            int courseId = int.Parse(Request.QueryString["id"]);
             thisCourse = (from c in cc.Courses
                 where c.CourseID == courseId
                 select c).First();
@@ -92,7 +91,6 @@ namespace Project2
         public IQueryable<Homework> GetHomeworks()
         {
             int CourseId = int.Parse(Request.QueryString["id"]);
-            CourseContext cc = new CourseContext();
             var query = from c in cc.Homeworks
                         where c.CourseId.Equals(CourseId)
                         select c;
@@ -113,7 +111,7 @@ namespace Project2
         {
             string userId = User.Identity.GetUserId();
             int CourseId = int.Parse(Request.QueryString["id"]);
-            using (CourseContext cc = new CourseContext())
+            using (cc)
             {
                 var std = (from s in cc.Students
                     where s.UserId == userId
@@ -154,7 +152,7 @@ namespace Project2
             string userId = User.Identity.GetUserId();
             int CourseId = int.Parse(Request.QueryString["id"]);
 
-            using (CourseContext cc = new CourseContext())
+            using (cc)
             {
                 var check = (from c in cc.StdCourses
                     where c.CourseID == CourseId && c.StdId == userId
@@ -173,6 +171,8 @@ namespace Project2
                          "&id=" + CourseId;
 
             Response.Redirect(url);
+        }
+
         protected void uploadFile_Click(object sender, EventArgs e)
         {
             if (UploadImages.HasFiles)

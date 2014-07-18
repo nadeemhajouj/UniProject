@@ -29,7 +29,7 @@ namespace Project2.Account
                 std.UserId = user.Id;
                 std.AcademicYear = int.Parse(SelectAcademicYear.SelectedItem.Text);
                 std.Departement = SelectDepartement.SelectedItem.Text;
-                std.BirthDate = DateTime.Now;
+                std.BirthDate = DateTime.Parse(DateofBirth.Text);
                 std.Email = EmailAddress.Text;
                 CourseContext cc = new CourseContext();
                 cc.Students.Add(std);

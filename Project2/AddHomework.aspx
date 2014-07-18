@@ -29,7 +29,7 @@
             <div class="form-group">
                 <asp:Label runat="server" AssociatedControlID="HomeworkDesc" CssClass="col-md-2 control-label">Homework Due Date</asp:Label>
                 <div class="col-md-10">
-                    <input type="text" id="datepicker" class="form-control">
+                    <asp:Literal ID="DuDate" runat="server"><input type="text" id="datepicker" class="form-control"></asp:Literal>
                     <asp:RequiredFieldValidator runat="server" ControlToValidate="HomeworkDesc"
                         CssClass="text-danger" ErrorMessage="The Homework Body field is required." />
                 </div>
@@ -75,6 +75,10 @@
                 changeYear: true
             });
         });
+
+        function pageLoad() {
+            $(".datepicker").datepicker(); // Will run at every postback/AsyncPostback
+        }
     </script>
 
 
