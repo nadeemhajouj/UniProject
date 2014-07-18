@@ -21,8 +21,9 @@ namespace Project2.Models
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Homework> Homeworks { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
-        public DbSet<Message> Messages { get; set; }
+        public DbSet<Message> Messages { get; set; } 
         public DbSet<Material> Materials { get; set; } 
+        public DbSet<StdCourse> StdCourses { get; set; }
     }
 
 }
