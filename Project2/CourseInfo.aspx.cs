@@ -35,7 +35,7 @@ namespace Project2
 
             int courseId = int.Parse(Request.QueryString["id"]);
             thisCourse = (from c in cc.Courses
-                where c.CourseID == courseId
+                where c.CourseID == CourseId
                 select c).First();
             txtCourse.Text = Request.QueryString["name"];
             courseName.Text = Request.QueryString["name"];
