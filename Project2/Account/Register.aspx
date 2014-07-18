@@ -11,7 +11,7 @@
         <hr />
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="FirstName" CssClass="col-md-2 control-label">First name</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="FirstName" CssClass="col-md-2 control-label">First Name</asp:Label>
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="FirstName" CssClass="form-control" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="FirstName"
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="LastName" CssClass="col-md-2 control-label">Last name</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="LastName" CssClass="col-md-2 control-label">Last Name</asp:Label>
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="lastName" CssClass="form-control" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="LastName"
@@ -27,11 +27,35 @@
             </div>
         </div>
         <div class="form-group">
-            <asp:Label runat="server" AssociatedControlID="UserName" CssClass="col-md-2 control-label">User name</asp:Label>
+            <asp:Label runat="server" AssociatedControlID="UserName" CssClass="col-md-2 control-label">User Name</asp:Label>
             <div class="col-md-10">
                 <asp:TextBox runat="server" ID="UserName" CssClass="form-control" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="UserName"
                     CssClass="text-danger" ErrorMessage="The user name field is required." />
+            </div>
+        </div>
+        <div class="form-group">
+            <asp:Label runat="server" AssociatedControlID="SelectAcademicYear" CssClass="col-md-2 control-label">Academic Year</asp:Label>
+            <div class="col-md-10">
+                <asp:DropDownList ID="SelectAcademicYear" runat="server" CssClass="form-control" OnSelectedIndexChanged="OnChange(this.form.SelectAcademicYear)">
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem> 
+                    <asp:ListItem>5</asp:ListItem>
+                </asp:DropDownList>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="SelectAcademicYear"
+                    CssClass="text-danger" ErrorMessage="The Academic Year field is required." />
+            </div>
+        </div>
+        <div class="form-group">
+            <asp:Label runat="server" name="dep1" AssociatedControlID="SelectDepartement" CssClass="col-md-2 control-label" Visible="False">Departement</asp:Label>
+            <div class="col-md-10" >
+                <asp:DropDownList ID="SelectDepartement" name="dep2" runat="server" CssClass="form-control" Visible="False">
+                    <asp:ListItem>Networks</asp:ListItem>
+                    <asp:ListItem>Software Engineering</asp:ListItem>
+                    <asp:ListItem>Artificial Intelligence</asp:ListItem>
+                </asp:DropDownList>
             </div>
         </div>
         <div class="form-group">
@@ -58,4 +82,17 @@
             </div>
         </div>
     </div>
+    
+    <script>
+        function OnChange(dd) {
+            var index = dd.selectedIndex;
+            var selDep1 = document.getElementsByName("dep1");
+            var selDep2 = document.getElementsByName("dep2");
+
+            if (index >= 2) {
+                selDep1.visible = true;
+                selDep2.visible = true;
+            }
+        }
+    </script>
 </asp:Content>
