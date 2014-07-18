@@ -6,7 +6,20 @@
         
         <br/>
         
-        <h2><asp:Literal runat="server" ID="txtHeader"></asp:Literal></h2>
+        <h2>
+            <asp:Literal runat="server" ID="txtHeader"></asp:Literal>
+            
+            <div class="pull-right">
+                
+                <div class="btn-group">
+                  <asp:Button runat="server" CssClass="btn btn-primary" Text="Add Homework" OnClick="AddHomeworkButton_Click"/>
+                  <asp:Button runat="server" CssClass="btn btn-primary" Text="Add Announcement" OnClick="AddAnnouncementButton_Click"/>
+                  <asp:Button Visible="False" ID="FollowCourse" runat="server" CssClass="btn btn-primary" Text="Follow Course" OnClick="FollowCourse_OnClick"/>
+                  <asp:Button Visible="False" ID="UnfollowCourse" runat="server" CssClass="btn btn-danger" Text="Unfollow Course" OnClick="UnfollowCourse_OnClick"/>
+                </div>
+
+            </div>
+        </h2>
                 
                 <div>
                     <ol class="breadcrumb">
@@ -18,20 +31,6 @@
                     </ol>
                 </div>
             
-            <div class="pull-right">
-                
-                <div class="btn-group">
-                  <asp:Button runat="server" CssClass="btn btn-primary" Text="Add Homework" OnClick="AddHomeworkButton_Click"/>
-                  <asp:Button runat="server" CssClass="btn btn-primary" Text="Add Announcement" OnClick="AddAnnouncementButton_Click"/>
-                  <asp:Button Visible="False" ID="FollowCourse" runat="server" CssClass="btn btn-primary" Text="Follow Course" OnClick="FollowCourse_OnClick"/>
-                  <asp:Button Visible="False" ID="UnfollowCourse" runat="server" CssClass="btn btn-success" Text="Unfollow Course" OnClick="UnfollowCourse_OnClick"/>
-                </div>
-
-            </div>
-            
-            <br/>
-            <hr/> 
-
             <div class="row">
 
                 <div class="panel panel-primary col-md-3">

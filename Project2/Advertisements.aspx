@@ -88,7 +88,7 @@
                 
             
             
-            <asp:ListView ID="AdvertisementsList" runat="server" DataKeyNames="AdvertisementID" GroupItemCount="100" ItemType="Project2.Models.Advertisement" SelectMethod="GetAdvertisements" >
+            <asp:ListView ID="AdvertisementsList" AllowPaging="true" PageSize="5" runat="server" DataKeyNames="AdvertisementID" GroupItemCount="100" ItemType="Project2.Models.Advertisement" SelectMethod="GetAdvertisements" >
                 <GroupTemplate >
                     <tr id="itemPlaceholderContainer" runat="server">
                         <td id="itemPlaceholder" runat="server"></td>
@@ -118,6 +118,15 @@
 
                 
             </asp:ListView>
+                
+            <asp:DataPager ID="DataPagerAnnouncements" runat="server" PagedControlID="AdvertisementsList"
+                PageSize="5">
+                <Fields>
+                    <asp:NextPreviousPagerField ShowFirstPageButton="True" ShowNextPageButton="False" />
+                    <asp:NumericPagerField />
+                    <asp:NextPreviousPagerField ShowLastPageButton="True" ShowPreviousPageButton="False" />
+                </Fields>
+            </asp:DataPager>
                 
            
 
