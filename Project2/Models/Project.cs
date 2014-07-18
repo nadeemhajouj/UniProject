@@ -35,6 +35,7 @@ namespace Project2.Models
         public int TeamId { get; set; }
 
         public virtual ICollection<Teacher> Teachers { get; set; }
+        public virtual ICollection<Material> Materials { get; set; } 
 
     }
 }
