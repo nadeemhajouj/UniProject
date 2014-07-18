@@ -2,11 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="container">
-        <asp:Button ID="AddHomeworkButton" runat="server" Text="Add Homework" onclick="AddHomeworkButton_Click" class="btn btn-default col-md-offset-10" />            
-        <h2>
-            <asp:Literal ID="txtHeader" runat="server"></asp:Literal>
-        </h2>
-                
+        
+        <br/>
+        
+        <h2><asp:Literal runat="server" ID="txtHeader"></asp:Literal></h2>
+            
                 <div>
                     <ol class="breadcrumb">
                         <li>Courses</li>
@@ -14,8 +14,23 @@
                         <li class="active"><asp:Label runat="server" ID="courseName"></asp:Label></li>
                     </ol>
                 </div>
+        
+            <div class="pull-right">
+                
+                <div class="btn-group">
+                  <asp:Button runat="server" CssClass="btn btn-primary" Text="Add Homework" OnClick="AddHomeworkButton_Click"/>
+                  <asp:Button runat="server" CssClass="btn btn-primary" Text="Add Announcement" OnClick="AddAnnouncementButton_Click"/>
+                  <asp:Button Visible="False" ID="FollowCourse" runat="server" CssClass="btn btn-primary" Text="Follow Course" OnClick="FollowCourse_OnClick"/>
+                  <asp:Button Visible="False" ID="UnfollowCourse" runat="server" CssClass="btn btn-success" Text="Unfollow Course" OnClick="UnfollowCourse_OnClick"/>
+                </div>
+
+            </div>
             
+            <br/>
+            <hr/> 
+
             <div class="row">
+
                 <div class="panel panel-primary col-md-3">
                     <div class="panel-heading">
                         <h3 class="panel-title">Course Information</h3>
@@ -29,7 +44,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-8 col-md-offset-1">
+                <div class="col-md-3 col-md-offset-1">
                     <h4>Course Objective:</h4>
                     <asp:Label ID="txtDesc" runat="server"></asp:Label>
                     <h4>Course Topics:</h4>
@@ -41,6 +56,7 @@
                     </ul>
 
                 </div>
+                
 
         </div>
             
@@ -103,5 +119,5 @@
 
         </div>
         </div>
-
+        
 </asp:Content>

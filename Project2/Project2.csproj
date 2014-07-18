@@ -396,6 +396,10 @@
     <Compile Include="Migrations\201407180122332_stdDepartement.Designer.cs">
       <DependentUpon>201407180122332_stdDepartement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201407180616027_stdCourses.cs" />
+    <Compile Include="Migrations\201407180616027_stdCourses.Designer.cs">
+      <DependentUpon>201407180616027_stdCourses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ACMProblem.cs" />
     <Compile Include="Models\Advertisement.cs" />
@@ -487,6 +491,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201407180122332_stdDepartement.resx">
       <DependentUpon>201407180122332_stdDepartement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201407180616027_stdCourses.resx">
+      <DependentUpon>201407180616027_stdCourses.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

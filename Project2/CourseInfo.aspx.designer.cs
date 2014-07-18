@@ -13,15 +13,6 @@ namespace Project2 {
     public partial class CourseInfo {
         
         /// <summary>
-        /// AddHomeworkButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddHomeworkButton;
-        
-        /// <summary>
         /// txtHeader control.
         /// </summary>
         /// <remarks>
@@ -47,6 +38,24 @@ namespace Project2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label courseName;
+        
+        /// <summary>
+        /// FollowCourse control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button FollowCourse;
+        
+        /// <summary>
+        /// UnfollowCourse control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button UnfollowCourse;
         
         /// <summary>
         /// txtCourse control.

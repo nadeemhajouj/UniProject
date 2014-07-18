@@ -24,7 +24,7 @@
         <div class="col-md-10">
             
             <ul class="nav nav-tabs" role="tablist">
-              <li class="active"><a>Send new Messages</a></li>
+              <li class="active"><a>Send New Message</a></li>
               <li><a>Received Messages</a></li>
               <li><a>Sent Messages</a></li>
             </ul>

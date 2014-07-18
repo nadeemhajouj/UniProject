@@ -23,6 +23,8 @@ namespace Project2.Models
 
         public DbSet<Homework> Homeworks { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
+
+        public DbSet<StdCourse> StdCourses { get; set; } 
     }
 
 }
