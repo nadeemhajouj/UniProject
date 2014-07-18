@@ -26,7 +26,7 @@ namespace Project2
         protected void CreateGroupButton_Click(object sender, EventArgs e)
         {
             string url = "team/CreateTeam.aspx?HomId=" + Request.QueryString["HomId"];
-            Response.Redirect(url);
+          Response.Redirect(url);
         }
     }
 }

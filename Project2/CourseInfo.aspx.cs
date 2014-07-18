@@ -35,11 +35,11 @@ namespace Project2
 
             int courseId = int.Parse(Request.QueryString["id"]);
             thisCourse = (from c in cc.Courses
-                where c.CourseID == courseId
+                where c.CourseID == CourseId
                 select c).First();
             txtCourse.Text = Request.QueryString["name"];
             courseName.Text = Request.QueryString["name"];
-            txtHeader.Text = Request.QueryString["name"];
+           // txtHeader.Text = Request.QueryString["name"];
 
             txtTeacher.Text = Request.QueryString["teacherFN"] + " " + Request.QueryString["teacherLN"] ;
             
@@ -87,7 +87,11 @@ namespace Project2
             string url = "AddHomework.aspx?CourseId=" + Request.QueryString["id"];
             Response.Redirect(url);
         }
-
+        protected void AskAnExpert_Click(object sender, EventArgs e)
+        {
+            string url = "AskQuestion.aspx?CourseId=" + Request.QueryString["id"];
+            Response.Redirect(url);
+        }
         public IQueryable<Homework> GetHomeworks()
         {
             int CourseId = int.Parse(Request.QueryString["id"]);
@@ -125,7 +129,7 @@ namespace Project2
                 stdCou.CourseID = CourseId;
                 stdCou.StdId = userId;
 
-                std.StdCourses.Add(stdCou);
+                //std.StdCourses.Add(stdCou);
                 cou.StdCourses.Add(stdCou);
 
                 cc.SaveChanges();

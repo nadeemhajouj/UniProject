@@ -24,6 +24,7 @@
 
 
             <div class="col-md-10">
+                
                 <div id="tabs">
                     <ul class="nav nav-tabs">
                         <li><a href="#tabs-1">Send new Messages</a></li>
@@ -64,6 +65,7 @@
 
 
                     </div>
+
                     <div id="tabs-2">
                         <asp:ListView ID="RecMessageList" runat="server" DataKeyNames="MessId" GroupItemCount="100" ItemType="Project2.Models.Message" SelectMethod="GetRecMessages">
                             <GroupTemplate>
